@@ -2,7 +2,7 @@
 
 A chessboard + piece renderer built with **Python’s `turtle` graphics**.
 
-This repository currently focuses on drawing an 8×8 chessboard, placing the pieces using Unicode symbols, and letting you **click to move a piece** (basic “select a square, then select a destination” behavior). Move legality, turns, check/checkmate, etc. are not implemented yet.
+This repository currently focuses on drawing an 8×8 chessboard, placing the pieces using Unicode symbols, and letting you **click to move a piece** (basic “select a square, then select a destination” behavior). Move legality, turns, check/checkmate, etc. are not implemented yet. Any1 who knows python turtle knows its mostly not made for making board games but people find ways...
 
 ## What’s in this repo?
 
@@ -12,9 +12,9 @@ This repository currently focuses on drawing an 8×8 chessboard, placing the pie
   - Writes pieces on top of squares using Unicode chess characters
   - Handles mouse clicks to select a square and move a piece to another square
 
-## How it works (high level)
+## How it works 
 
-- The board is stored as an 8×8 list called `board`.
+- The board is stored as an 8×8 list called `board`. A list of lists
 - Each click is converted into a `(col, row)` index.
 - First click: highlights the square.
 - Second click: if the first square contained a piece, the piece is moved in `board` and the graphics are updated for the source and destination squares.
@@ -46,12 +46,8 @@ A 640×640 window should open with the chessboard.
 
 ## Ideas for next steps
 
-- Add legal move generation per piece.
-- Add turn handling (white then black).
-- Implement captures and remove captured pieces from the board.
-- Redraw from the `board` state each move (instead of partial stamping) to simplify rendering.
-- Add UI/status text (whose turn, selected piece, invalid move messages).
-
+- Gameplay would be nice!
+  
 ## License
 
-No license file is currently included. If you want others to use/modify this code, consider adding a license (MIT, Apache-2.0, GPL, etc.).
+No license file is currently included...
