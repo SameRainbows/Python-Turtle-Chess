@@ -51,3 +51,8 @@ A 640×640 window should open with the chessboard.
 ## License
 
 No license file is currently included...
+
+
+---
+
+Made by [Mehmet Dedeler](https://mehmetdedeler.com).
